@@ -239,9 +239,10 @@ public class CodeChef {
         int numOfCars = 1;
         for(int i = 1; i < speeds.length;i++) {
             if(max_speed >= speeds[i] ) {
+                max_speed = speeds[i];
                 numOfCars++;
             }
-            max_speed = speeds[i];
+
 
         }
         System.out.println(numOfCars);
